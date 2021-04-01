@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>User Id</th>
+    <th>User Name</th>
+    <th>Group Name</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td><b>{{getGroup(user.groupId).name}}</b></td>
+  </tr>
+  <tr>
+</table>
+
